@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pandrawer"
+version = "0.1.0"
+description = "A tool to generate GFA and layout files from an image."
+authors = [
+    { name = "Alex Leonard", email = "alleonard@ethz.ch" }
+]
+dependencies = [
+    "opencv-python",
+    "numpy",
+    "networkx",
+    "scipy",
+    "shapely"
+]
+
+[project.scripts]
+pandrawer = "pandrawer:main_cli"
+
+[tool.setuptools]
+packages = ["pandrawer"]

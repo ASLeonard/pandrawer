@@ -2,7 +2,7 @@
 
 A fun way to give a pangenomic flavour to your organism of choice.
 
-### Usage
+### Usage
 
 We just need an image (ideally a simple one where the outlining contour can be easily calculated), and output prefix for the *.gfa* and *.layout*.
 We can also adjust the number of bubbles we want introduced. 

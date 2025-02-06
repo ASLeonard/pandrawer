@@ -114,7 +114,7 @@ def write_GFA(segments, links):
         gfa.append(f"L\t{L[0]}\t+\t{L[1]}\t+\t0M")
     return gfa
 
-def pandrawer(image,prefix,bubbles):
+def pandrawer(image,prefix,bubbles=10):
 
     points = extract_coordinates(image)
     nodes, edges = generate_gfa(points)
@@ -141,5 +141,5 @@ def main_cli():
     
     pandrawer(args.image,args.prefix,args.bubbles)
 
-    if __name__ == "__main__":
-        main_cli()
+if __name__ == "__main__":
+    main_cli()

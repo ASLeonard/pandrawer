@@ -7,15 +7,23 @@ A fun way to give a pangenomic flavour to your organism of choice.
 We just need an image (ideally a simple one where the outlining contour can be easily calculated), and output prefix for the *.gfa* and *.layout*.
 We can also adjust the number of bubbles we want introduced. 
 
-```python
+```bash
 pandrawer --image cow.jpg --prefix award_winning_figure --bubbles 20
+```
+
+or
+
+```python
+import pandrawer
+
+pandrawer.pandrawer("cow.jpg","award_winning_figure",20)
 ```
 
 You can then load the *.gfa* in `BandageNG` and then subsequently load the *.layout* file.
 
 ### Example
 
-[BPC](pandrawer.svg)
+![BPC](pandrawer.svg)
 
 ### Extensions
 
